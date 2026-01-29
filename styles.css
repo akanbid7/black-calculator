@@ -1,0 +1,96 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Page background */
+body {
+  height: 100vh;
+  background: radial-gradient(circle at top, #1f2a38, #0e1621);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Calculator container */
+.calculator {
+  width: 320px;
+  background: #121a24;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Display */
+.display {
+  height: 70px;
+  background: #0b111a;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #ffffff;
+  font-size: 2.2rem;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.6);
+}
+
+/* Buttons grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+/* Base button style */
+.btn {
+  height: 55px;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow:
+    0 6px 12px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.btn:active {
+  transform: translateY(2px);
+  box-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Dark number buttons */
+.btn-dark {
+  background: #1a2432;
+}
+
+/* Operator buttons */
+.btn-operator {
+  background: #2e6bff;
+}
+
+/* Clear button */
+.btn-clear {
+  background: #e43c3c;
+}
+
+/* Equals button */
+.btn-equals {
+  background: #22c55e;
+  grid-column: span 2;
+}
+
+/* Zero button spans two columns */
+.zero {
+  grid-column: span 2;
+}
