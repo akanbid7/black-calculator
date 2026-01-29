@@ -38,7 +38,7 @@ body {
   justify-content: flex-end;
   color: #ffffff;
   font-size: 2.2rem;
-  box-shadow: inset 0 0 10px rgba(0,0,0,0.6);
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.7);
 }
 
 /* Buttons grid */
